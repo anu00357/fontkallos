@@ -1,0 +1,11 @@
+# Visual Studio Code
+.vscode/
+
+# Node dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

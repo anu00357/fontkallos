@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Font Catalog — FontKallos</title>
+  <meta name="description" content="A clean, modern type foundry website template." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="fontkallos.png" alt="FontKallos logo"></a>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="catalog.html">Browse Fonts</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="btn btn-ghost small" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Catalog -->
+    <section id="catalog" class="section">
+      <div class="container">
+        <div class="catalog-head">
+          <div>
+            <h2>Our Fonts</h2>
+            <p class="muted-text">A growing catalog for multilingual brands. Filter to explore.</p>
+          </div>
+        </div>
+
+        <div class="chip-row" id="categoryChips">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="sans">Sans</button>
+          <button class="chip" data-filter="serif">Serif</button>
+          <button class="chip" data-filter="display">Display</button>
+          <button class="chip" data-filter="script">Script</button>
+          <button class="chip" data-filter="pack">Packs</button>
+          <button class="chip" data-filter="free">Free</button>
+        </div>
+
+        <div class="grid cards" id="fontGrid">
+          <!-- Card 1 -->
+          <article class="card" data-tags="sans english" data-category="sans">
+            <div class="preview preview-image"><img src="images/FKL-Vasantham/FKL-VASANTHAM_page-0001.jpg" alt="FKL-Vasantham font preview"></div>
+            <h3>FKL-Vasantham</h3>
+            <div class="row">
+              <p class="price">₹ 600</p>
+              <a class="btn small" href="font-vasantham.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" data-tags="serif malayalam" data-category="serif">
+            <div class="preview preview-image"><img src="images/FKL-GREESHlMAM/preview.jpg" alt="FKL-GREESHlMAM font preview"></div>
+            <h3>FKL-GREESHlMAM</h3>
+            <div class="row">
+              <p class="price">₹ 200</p>
+              <a class="btn small" href="font-greeshmam.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" data-tags="display english" data-category="display">
+            <div class="preview preview-image"><img src="images/FKL-Varsham/preview.jpg" alt="FKL-Varsham font preview"></div>
+            <h3>FKL-Varsham</h3>
+            <div class="row">
+              <p class="price">₹ 300</p>
+              <a class="btn small" href="font-varsham.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" data-tags="script tamil" data-category="script">
+            <div class="preview preview-image"><img src="images/FS-Thendral/preview.jpg" alt="FS Thendral font preview"></div>
+            <h3>FS Thendral</h3>
+            <div class="row">
+              <p class="price">₹ 600</p>
+              <a class="btn small" href="font-thendral.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card" data-tags="pack english malayalam" data-category="pack">
+            <div class="preview preview-image"><img src="images/FS-Duo-Pack/preview.jpg" alt="FS Duo Pack font preview"></div>
+            <h3>FS Duo Pack</h3>
+            <div class="row">
+              <p class="price">₹ 1,000</p>
+              <a class="btn small" href="font-duo-pack.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card" data-tags="free arabic" data-category="free">
+            <div class="preview preview-image"><img src="images/FS-Noor/preview.jpg" alt="FS Noor font preview"></div>
+            <h3>FS Noor</h3>
+            <div class="row">
+              <p class="price">Free</p>
+              <a class="btn small" href="font-noor.html" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="card" data-tags="serif malayalam" data-category="serif">
+            <div class="preview preview-image"><img src="images/FS-Keralam/preview.jpg" alt="FS Keralam font preview"></div>
+            <h3>FS Keralam</h3>
+            <div class="row">
+              <p class="price">₹ 700</p>
+              <a class="btn small" href="font-keralam.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="card" data-tags="display english" data-category="display">
+            <div class="badge">SALE</div>
+            <div class="preview preview-image"><img src="images/FS-Banner/preview.jpg" alt="FS Banner font preview"></div>
+            <h3>FS Banner</h3>
+            <div class="row">
+              <p class="price"><span class="strike">₹ 900</span> ₹ 540</p>
+              <a class="btn small" href="font-banner.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="card" data-tags="display malayalam" data-category="display">
+            <div class="badge">SALE</div>
+            <div class="preview preview-image"><img src="images/FKL-Fithr/preview.jpg" alt="FKL-Fithr font preview"></div>
+            <h3>FKL-Fithr</h3>
+            <div class="row">
+              <p class="price"><span class="strike">₹ 600</span> ₹ 550</p>
+              <a class="btn small" href="font-fithr.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 10 -->
+          <article class="card" data-tags="script english" data-category="script">
+            <div class="preview preview-image"><img src="images/FKL-Chakram/preview.jpg" alt="FKL-Chakram font preview"></div>
+            <h3>FKL-Chakram</h3>
+            <div class="row">
+              <p class="price">₹ 300</p>
+              <a class="btn small" href="font-chakram.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="fontkallos.png" alt="FontKallos logo"></a>
+        <p class="tiny">© 2025 FontKallos Type Studio. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

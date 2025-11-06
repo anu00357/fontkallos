@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FontKallos — Type Studio</title>
+  <meta name="description" content="A clean, modern type foundry website template." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="fontkallos.png" alt="FontKallos logo"></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#catalog">Browse Fonts</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-ghost small" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">We create</p>
+          <h1 class="display">Typefaces</h1>
+          <p class="sub">Bring your vision to life with original fonts that tell stories with elegance, clarity, and personality.</p>
+          <div class="cta-row">
+            <a class="btn" href="#catalog">Browse our fonts</a>
+            <a class="btn btn-ghost" href="#services">Custom type</a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Stylized glyph collage">
+          <div class="glyph-card">Aa</div>
+          <div class="glyph-card">ഗ</div>
+          <div class="glyph-card">ع</div>
+          <div class="glyph-card">த</div>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About us</h2>
+          <p class="lead">
+            FontKallos is a small, spirited type studio crafting retail fonts and custom lettering for brands.
+            From native scripts to sleek modern sans, we design for readability, culture, and charm.
+          </p>
+          <a href="#services" class="link">Learn more about our studio →</a>
+        </div>
+        <div class="about-panels">
+          <div class="panel">Serif</div>
+          <div class="panel">Sans</div>
+          <div class="panel">Display</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section muted">
+      <div class="container">
+        <h2>Browse by category</h2>
+        <div class="chip-row" id="categoryChips">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="sans">Sans</button>
+          <button class="chip" data-filter="serif">Serif</button>
+          <button class="chip" data-filter="display">Display</button>
+          <button class="chip" data-filter="script">Script</button>
+          <button class="chip" data-filter="pack">Packs</button>
+          <button class="chip" data-filter="free">Free</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <section id="catalog" class="section">
+      <div class="container">
+        <div class="catalog-head">
+          <div>
+            <h2>Our fonts</h2>
+            <p class="muted-text">A growing catalog for multilingual brands. Filter to explore.</p>
+          </div>
+          <a href="catalog.html" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Fonts</a>
+        </div>
+
+        <div class="grid cards" id="fontGrid">
+          <!-- Card 1 -->
+          <article class="card" data-tags="sans english">
+            <div class="preview preview-image"><img src="images/FKL-Vasantham/FKL-VASANTHAM_page-0001.jpg" alt="FKL-Vasantham font preview"></div>
+            <h3>FKL-Vasantham</h3>
+            <div class="row">
+              <p class="price">₹ 600</p>
+              <a class="btn small" href="font-vasantham.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" data-tags="serif malayalam">
+            <div class="preview preview-image"><img src="images/FS-Keralam/preview.jpg" alt="FS Keralam font preview"></div>
+            <h3>FS Keralam</h3>
+            <div class="row">
+              <p class="price">₹ 700</p>
+              <a class="btn small" href="font-keralam.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" data-tags="display english">
+            <div class="badge">SALE</div>
+            <div class="preview preview-image"><img src="images/FS-Banner/preview.jpg" alt="FS Banner font preview"></div>
+            <h3>FS Banner</h3>
+            <div class="row">
+              <p class="price"><span class="strike">₹ 900</span> ₹ 540</p>
+              <a class="btn small" href="font-banner.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" data-tags="script tamil">
+            <div class="preview preview-image"><img src="images/FS-Thendral/preview.jpg" alt="FS Thendral font preview"></div>
+            <h3>FS Thendral</h3>
+            <div class="row">
+              <p class="price">₹ 600</p>
+              <a class="btn small" href="font-thendral.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card" data-tags="pack english malayalam">
+            <div class="preview preview-image"><img src="images/FS-Duo-Pack/preview.jpg" alt="FS Duo Pack font preview"></div>
+            <h3>FS Duo Pack</h3>
+            <div class="row">
+              <p class="price">₹ 1,000</p>
+              <a class="btn small" href="font-duo-pack.html" target="_blank" rel="noopener noreferrer">Buy now</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card" data-tags="free arabic">
+            <div class="preview preview-image"><img src="images/FS-Noor/preview.jpg" alt="FS Noor font preview"></div>
+            <h3>FS Noor (Free)</h3>
+            <div class="row">
+              <p class="price">₹ 0</p>
+              <a class="btn small" href="font-noor.html" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / CTA -->
+    <section id="services" class="cta">
+      <div class="container cta-inner">
+        <h2>Highlight your brand with a custom typeface</h2>
+        <p>We build bold, legible, culturally rooted type that fits your story.</p>
+        <a class="btn btn-light" href="#contact">Contact us</a>
+      </div>
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="https://cdn.coverr.co/videos/coverr-flowing-ink-1841/1080p.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">Have a project in mind? Let's make something beautiful and useful.</p>
+          <ul class="contact-list">
+            <li>✉️ hello@yourstudio.com</li>
+            <li>📞 +91 90000 00000</li>
+            <li>📍 Calicut, Kerala</li>
+          </ul>
+        </div>
+        <form class="form" onsubmit="event.preventDefault(); alert('Thanks! We will be in touch.');">
+          <label>Name <input type="text" required></label>
+          <label>Email <input type="email" required></label>
+          <label>Message <textarea rows="4" required></textarea></label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="fontkallos.png" alt="FontKallos logo"></a>
+        <p class="tiny">© 2025 FontKallos Type Studio. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
